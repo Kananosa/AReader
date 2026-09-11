@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "AReader",
+  "version": "1.0.0",
+  "description": "Reader",
+  "permissions": ["storage", "tabs", "offscreen", "notifications", "tts", "contextMenus"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "Open Reader" },
+  "options_page": "options.html",
+  "commands": {
+    "capture-and-ask": {
+      "suggested_key": { "default": "Ctrl+Shift+Y" },
+      "description": "启动"
+    },
+    "stop-speaking": {
+      "suggested_key": { "default": "Ctrl+Shift+X" },
+      "description": "停止朗读"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <title>AReader</title>
+  <style>
+    body { font-family: sans-serif; padding: 24px; background: #1e1e1e; color: #eee; }
+    button { font-size: 16px; padding: 10px 24px; cursor: pointer; }
+    video { max-width: 90%; margin-top: 16px; border: 1px solid #555; }
+    #status { margin-top: 12px; color: #8f8; }
+  </style>
+</head>
+<body>
+  <h2>AReader 捕获源</h2>
+  <p>你有可能来错地方了。<b>你有可能无需打开本页。</b>快捷键可在 chrome://extensions/shortcuts 自行修改和查看<br></p>
+  <button id="start">开始</button>
+  <button id="stop">停止</button>
+  <div id="status">状态：未捕获</div>
+  <video id="preview" muted playsinline></video>
+  <script src="capture.js"></script>
+</body>
+</html>

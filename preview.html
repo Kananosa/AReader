@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta charset="utf-8"><title>发送前确认</title>
+<style>
+  body { font-family: sans-serif; max-width: 720px; margin: 24px auto; padding: 0 16px; }
+  img { max-width: 100%; border: 1px solid #555; margin-top: 12px; }
+  button { font-size: 16px; padding: 10px 24px; margin: 12px 8px 0 0; cursor: pointer; }
+  .warn { color: #a50; }
+</style></head>
+<body>
+  <h2>发送前预览确认</h2>
+  <p class="warn">这张截图将发送到你配置的大模型 API。确认无隐私内容后再发送。</p>
+  <img id="img" alt="截图预览">
+  <div>
+    <button id="send">确认发送并朗读</button>
+    <button id="cancel">取消</button>
+    <span id="msg"></span>
+  </div>
+  <script src="preview.js"></script>
+</body>
+</html>
